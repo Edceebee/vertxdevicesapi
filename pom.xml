@@ -17,21 +17,18 @@
     </properties>
 
     <dependencies>
-        <!-- Core Vert.x dependency -->
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-core</artifactId>
             <version>${vertx.version}</version>
         </dependency>
 
-        <!-- Vert.x Web for HTTP routing (like Spring Web MVC) -->
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-web</artifactId>
             <version>${vertx.version}</version>
         </dependency>
 
-        <!-- For logging (optional but recommended) -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
@@ -41,7 +38,6 @@
 
     <build>
         <plugins>
-            <!-- Maven Shade Plugin to create fat JAR (like Spring Boot's executable JAR) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
